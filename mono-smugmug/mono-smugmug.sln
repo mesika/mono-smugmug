@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mono-smugmug", "mono-smugmug\mono-smugmug.csproj", "{F4B0D875-AA5C-41FB-AA92-B4A7B5BB2C64}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmugMugModel", "..\SmugMugOOModel\SmugMugModel\SmugMugModel.csproj", "{FA99556F-7CCF-494C-900C-5125EE2BA02C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F4B0D875-AA5C-41FB-AA92-B4A7B5BB2C64}.Debug|x86.ActiveCfg = Debug|x86
+		{F4B0D875-AA5C-41FB-AA92-B4A7B5BB2C64}.Debug|x86.Build.0 = Debug|x86
+		{F4B0D875-AA5C-41FB-AA92-B4A7B5BB2C64}.Release|x86.ActiveCfg = Release|x86
+		{F4B0D875-AA5C-41FB-AA92-B4A7B5BB2C64}.Release|x86.Build.0 = Release|x86
+		{FA99556F-7CCF-494C-900C-5125EE2BA02C}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{FA99556F-7CCF-494C-900C-5125EE2BA02C}.Debug|x86.Build.0 = Debug|Any CPU
+		{FA99556F-7CCF-494C-900C-5125EE2BA02C}.Release|x86.ActiveCfg = Release|Any CPU
+		{FA99556F-7CCF-494C-900C-5125EE2BA02C}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = mono-smugmug\mono-smugmug.csproj
+		Policies = $0
+		$0.DotNetNamingPolicy = $1
+		$1.DirectoryNamespaceAssociation = None
+		$1.ResourceNamePolicy = FileFormatDefault
+	EndGlobalSection
+EndGlobal

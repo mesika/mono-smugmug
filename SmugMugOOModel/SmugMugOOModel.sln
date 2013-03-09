@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DCC5F173-E64B-4F37-ACD8-803090688B22}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmugMugModel", "SmugMugModel\SmugMugModel.csproj", "{FA99556F-7CCF-494C-900C-5125EE2BA02C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmugMugTest", "SmugMugTest\SmugMugTest.csproj", "{7F0008B0-AFC4-4DB2-B0D2-71F3071F4D78}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7F0008B0-AFC4-4DB2-B0D2-71F3071F4D78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F0008B0-AFC4-4DB2-B0D2-71F3071F4D78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F0008B0-AFC4-4DB2-B0D2-71F3071F4D78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F0008B0-AFC4-4DB2-B0D2-71F3071F4D78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA99556F-7CCF-494C-900C-5125EE2BA02C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA99556F-7CCF-494C-900C-5125EE2BA02C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA99556F-7CCF-494C-900C-5125EE2BA02C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA99556F-7CCF-494C-900C-5125EE2BA02C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = SmugMugModel\SmugMugModel.csproj
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs08
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = SmugMugTest\\SmugMugTest.csproj
+		SccProjectName1 = SmugMugTest
+		SccLocalPath1 = SmugMugTest
+		SccProjectUniqueName2 = SmugMugModel\\SmugMugModel.csproj
+		SccProjectName2 = SmugMugModel
+		SccLocalPath2 = SmugMugModel
+		SccProjectUniqueName3 = SmugMugModelAsync\\SmugMugModelAsync.csproj
+		SccProjectName3 = SmugMugModelAsync
+		SccLocalPath3 = SmugMugModelAsync
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
