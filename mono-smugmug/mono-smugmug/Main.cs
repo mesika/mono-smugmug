@@ -88,7 +88,7 @@ namespace monosmugmug
 			Console.Clear ();
 			Console.WriteLine("Upload process has been completed. :)");
 			Console.ReadLine();
-			System.Environment.Exit(0);
+			System.Environment.Exit(1);
 		}
 
 		private static UploaderConfiguration CreateConfiguration ()

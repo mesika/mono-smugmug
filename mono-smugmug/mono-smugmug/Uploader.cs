@@ -21,12 +21,13 @@ namespace monosmugmug
 		private int _currentFileIndex = 0;
 		private float _kiloBytesPerSecond = 0.0f;
 		private int _currentFileSizeInKB = 0;
+		private int _bandWidthMultiplier = 0;
 		private Logger _logger = LogManager.GetLogger("mono-smugmug");
 		private IEnumerable<string> _albumExistingFilenames; // = new List<string>();
 		
 		public Uploader ()
 		{
-			AllowedExtensions = new [] { ".jpg",".png",".mov",".mp4",".avi"};
+			AllowedExtensions = new [] { ".jpg",".png",".mov",".mp4",".avi",".mpg"};
 			_process = Process.GetCurrentProcess();
 		}
 
@@ -98,6 +99,7 @@ namespace monosmugmug
 					if (_albumExistingFilenames.Contains(fileInfo.Name))
 					{
 						_logger.Info("File {0} already exist, skipping.", fileInfo.Name);
+						_currentFileIndex++;
 						continue;
 					}
 					_currentFileSizeInKB = (int)fileInfo.Length / 1024;
@@ -124,7 +126,7 @@ namespace monosmugmug
 		{
 			Console.Clear ();
 			Console.SetCursorPosition(1,3);
-			Console.Write (string.Format("Process Memory: {0:n0}MB", _process.WorkingSet64/1024));
+			Console.Write (string.Format("Process Memory: {0:n0}MB  |  Max Speed: {1}KB/s", _process.WorkingSet64/1024, _bandWidthMultiplier));
 			Console.SetCursorPosition(1,4);
 			Console.Write (string.Format("Uploadind {0}, Progress {1:#.###}%", _currentFilename,_completionPercentage*100));
 			Console.SetCursorPosition(1,5);
@@ -138,6 +140,7 @@ namespace monosmugmug
 			_currentFilename = e.FileName;
 			_completionPercentage = e.PercentComplete;
 			_kiloBytesPerSecond = e.KBperSecond;
+			_bandWidthMultiplier = e.Bandwidth;
 		}
 
 		
